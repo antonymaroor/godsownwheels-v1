@@ -189,6 +189,9 @@
     const phone = document.getElementById('phone').value;
     const message = `New taxi booking request from ${phone}`;
     window.open(`https://wa.me/917736051805?text=${encodeURIComponent(message)}`, '_blank');
+    setTimeout(() => {
+      window.location.href = 'thank-you.html';
+    }, 1000);
   });
 </script>
 
