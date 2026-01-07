@@ -29,3 +29,157 @@
     },
     "areaServed": [
       "Kochi",
+      "Kochi Airport",
+      "Munnar",
+      "Alleppey",
+      "Thekkady"
+    ],
+    "url": "https://www.yourdomain.com",
+    "priceRange": "₹₹",
+    "openingHours": "Mo-Su 00:00-23:59"
+  }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fdfdfd;
+      color: #333;
+    }
+    header {
+      background: #292827;
+      color: white;
+      padding: 2em 1em;
+      text-align: center;
+    }
+    header img {
+      max-height: 90px;
+      margin-bottom: 1em;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    main {
+      padding: 2em 1em;
+      max-width: 900px;
+      margin: auto;
+    }
+    input[type="tel"] {
+      padding: 1em;
+      font-size: 1em;
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 1em 2em;
+      font-size: 1em;
+      background-color: #cca300;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #b38f00;
+    }
+    section {
+      margin-top: 2.5em;
+    }
+    footer {
+      background: #eee;
+      padding: 1.5em;
+      text-align: center;
+      font-size: 0.9em;
+      margin-top: 3em;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <img src="images/logo.png" alt="Taxi Service in Kochi Logo" />
+  <h1>Taxi Service in Kochi</h1>
+  <p>Airport Pickup • Tourist Taxi • Outstation Cabs • 24/7 Service</p>
+</header>
+
+<main>
+
+  <!-- Booking -->
+  <section>
+    <form id="bookingForm">
+      <input type="tel" id="phone" placeholder="Enter your phone number" required />
+      <br />
+      <button type="submit">Book Taxi via WhatsApp</button>
+    </form>
+  </section>
+
+  <!-- Services -->
+  <section>
+    <h2>Reliable Taxi Service in Kochi</h2>
+    <p>
+      We provide professional taxi services in Kochi for airport transfers, local city travel, and long-distance tourist trips.
+      Our drivers are experienced, punctual, and familiar with all major tourist destinations in Kerala.
+    </p>
+  </section>
+
+  <section>
+    <h2>Kochi Airport Taxi Pickup & Drop</h2>
+    <p>
+      Looking for a dependable Kochi airport taxi? We offer 24/7 airport pickup and drop services from Cochin International Airport
+      with on-time arrivals and comfortable vehicles.
+    </p>
+  </section>
+
+  <section>
+    <h2>Tourist Taxi & Outstation Cabs</h2>
+    <p>
+      Planning a Kerala trip? Book our tourist taxi service from Kochi to popular destinations like
+      Munnar, Alleppey, Thekkady, and Varkala. Ideal for families, couples, and international tourists.
+    </p>
+  </section>
+
+  <section>
+    <h2>Why Choose Our Kochi Taxi Service?</h2>
+    <ul>
+      <li>✔ 24/7 taxi service in Kochi</li>
+      <li>✔ Instant WhatsApp booking</li>
+      <li>✔ Clean & well-maintained vehicles</li>
+      <li>✔ Experienced local drivers</li>
+      <li>✔ Affordable & transparent pricing</li>
+    </ul>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <h2>Frequently Asked Questions</h2>
+    <p><strong>Do you provide airport taxi at night?</strong><br />Yes, our Kochi airport taxi service operates 24/7.</p>
+    <p><strong>Can tourists book sightseeing taxis?</strong><br />Yes, we offer full-day and multi-day tourist taxi packages.</p>
+  </section>
+
+</main>
+
+<footer>
+  <p><strong>Call / WhatsApp:</strong> +91 95676 50305</p>
+  <p><strong>Location:</strong> Kochi, Kerala, India</p>
+  <p>&copy; 2025 Kochi Taxi Service</p>
+</footer>
+
+<script>
+  document.getElementById('bookingForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const phone = document.getElementById('phone').value;
+    const message = `New taxi booking request from ${phone}`;
+    window.open(`https://wa.me/919567650305?text=${encodeURIComponent(message)}`, '_blank');
+  });
+</script>
+
+</body>
+</html>
+
