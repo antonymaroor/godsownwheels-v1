@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://godsownwheels.com/sitemap.xml
+Sitemap: https://www.godsownwheels.com/sitemap.xml
