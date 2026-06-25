@@ -239,6 +239,12 @@
       color: #fff;
       border-bottom-color: var(--gold);
     }
+    .topbar-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.6em;
+      flex-wrap: wrap;
+    }
     .topbar-cta {
       background: var(--gold);
       color: #fff;
@@ -251,6 +257,12 @@
     }
     .topbar-cta:hover {
       background: var(--gold-dark);
+    }
+    .topbar-cta.wa {
+      background: #25D366;
+    }
+    .topbar-cta.wa:hover {
+      background: #1ebe5d;
     }
 
     /* Hero */
@@ -317,6 +329,23 @@
     }
     .btn-outline-light:hover {
       background: rgba(255,255,255,0.12);
+    }
+    .btn-whatsapp {
+      background: #25D366;
+      color: #fff;
+      border: none;
+      padding: 0.95em 1.9em;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 1em;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+      transition: background 0.15s ease, transform 0.15s ease;
+    }
+    .btn-whatsapp:hover {
+      background: #1ebe5d;
+      transform: translateY(-1px);
     }
     .btn-secondary {
       display: inline-block;
@@ -601,7 +630,10 @@
       <a href="#kochi-tour">Kochi Tour</a>
       <a href="#faq">FAQ</a>
     </nav>
-    <a class="topbar-cta" href="tel:+917736051805">Call Now</a>
+    <div class="topbar-actions">
+      <a class="topbar-cta" href="tel:+917736051805">Call Now</a>
+      <a class="topbar-cta wa" href="https://wa.me/917736051805?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20your%20taxi%20and%20tour%20packages." target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">Chat with us</a>
+    </div>
   </div>
 </header>
 
@@ -611,6 +643,7 @@
   <p class="hero-sub">Munnar Tour Packages &bull; Airport Pickup &bull; Kochi City Tours &bull; Outstation Cabs &bull; 24/7 Service</p>
   <div class="hero-actions">
     <a href="#book" class="btn-primary">Book Your Trip</a>
+    <a href="https://wa.me/917736051805?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20your%20taxi%20and%20tour%20packages." class="btn-whatsapp" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">Chat with us</a>
     <a href="tel:+917736051805" class="btn-outline-light">Call +91 77360 51805</a>
   </div>
 </section>
